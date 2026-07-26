@@ -1,0 +1,136 @@
+.job-card {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    justify-content: space-between;
+    align-items: top;
+    transition: var(--general-transition);
+    cursor: pointer;
+}
+
+.job-card:hover {
+    box-shadow: var(--shadow-sm);
+    translate: 0 -2px;
+    border-color: var(--accent-2);
+}
+
+.job-card-left {
+    display: flex;
+    gap: 15px;
+    align-items: top;
+    flex-direction: column;
+}
+
+@media(max-width:1200px) {
+    .job-card {
+        flex-direction: column;
+    }
+
+    .job-card-left {
+        flex-direction: column;
+    }
+}
+
+.employer-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    background-color: var(--accent);
+    border-radius: 400px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 50px;
+    height: 50px;
+}
+
+.job-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.job-card .job-title {
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: var(--general-transition);
+    max-width: 200px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &:hover {
+        color: var(--accent);
+    }
+}
+
+.job-card .employer-data {
+    display: flex;
+    gap: 1px;
+    align-items: center;
+}
+
+.job-card .employer-name,
+.job-card .employer-location {
+    font-size: 0.75rem;
+    color: var(--text-2);
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: var(--general-transition);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    &:hover {
+        color: var(--accent);
+    }
+}
+
+.job-card .employer-name {
+    max-width: 70px;
+}
+
+.job-card .employer-location {
+    max-width: 110px;
+}
+
+.decorative-dot {
+    stroke: var(--text-3);
+}
+
+.job-card .job-tags {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.job-tags .data-badge {
+    font-size: 0.7rem;
+}
+
+.job-card .job-card-right {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: end;
+}
+
+.job-salary-range {
+    display: flex;
+    align-self: end;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.job-card-right .time-posted {
+    font-size: 0.7rem;
+    color: var(--text-2);
+    font-weight: 400;
+}
