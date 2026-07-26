@@ -16,6 +16,11 @@
     border-color: var(--accent-2);
 }
 
+.job-card:has([aria-busy='true']):hover {
+    /*For card skeletons */
+    border-color: var(--border);
+}
+
 .job-card-left {
     display: flex;
     gap: 15px;
