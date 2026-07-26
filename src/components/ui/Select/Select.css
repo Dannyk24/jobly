@@ -1,0 +1,75 @@
+.dropdown-trigger {
+    display: flex;
+    background: none;
+    appearance: none;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    border: 1px solid var(--border);
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-2);
+    transition: var(--general-transition);
+    background-color: var(--accent-soft);
+    color: var(--accent);
+}
+
+.dropdown-trigger:focus {
+    outline: none;
+}
+
+.dropdown-trigger[data-placeholder] {
+    /*For when select has no value*/
+    background-color: var(--surface-2);
+    color: var(--text-2);
+
+    svg {
+        stroke: var(--text-2);
+    }
+}
+
+.dropdown-trigger svg {
+    width: 17px;
+    stroke: var(--accent);
+}
+
+.dropdown-content {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius-sm);
+    width: 150px;
+}
+
+.dropdown-item {
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+    color: var(--text-2);
+    transition: all 0.15s ease;
+    outline: none;
+}
+
+.dropdown-item[data-state="checked"] {
+    color: var(--accent);
+}
+
+.dropdown-item span {
+    width: 100%;
+}
+
+.dropdown-item:hover {
+    outline: none;
+    color: var(--accent);
+    background-color: var(--surface-2);
+}
+
+.dropdown-item:focus {
+    outline: none;
+}
