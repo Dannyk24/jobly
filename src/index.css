@@ -52,13 +52,32 @@
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   background-color: var(--bg);
-  max-width: 1300px;
   color: var(--text);
   font-family: var(--primary-font);
   transition: var(--general-transition);
+}
+
+body::-webkit-scrollbar {
+  width: 1px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: 20px 0 0 20px;
+}
+
+.app-container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1300px;
+  color: var(--text);
 }
 
 a {

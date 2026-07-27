@@ -10,17 +10,19 @@ import { AppLayout, MainLayout } from "./layouts";
 
 function App() {
   return (
-    <Routes>
-      <Route element={<AppLayout />}>
-        <Route element={<MainLayout />}>
-          <Route path="/" element={<HomePage />} />
+    <div className="app-container">
+      <Routes>
+        <Route element={<AppLayout />}>
+          <Route element={<MainLayout />}>
+            <Route path="/" element={<HomePage />} />
+          </Route>
+          <Route path="/search" element={<SearchPage />} />
+          <Route path="/saved-jobs" element={<SavedJobsPage />} />
+          <Route path="/job-details/:jobId" element={<JobDetailsPage />} />
+          <Route path="*" element={<PageNotFound />} />
         </Route>
-        <Route path="/search" element={<SearchPage />} />
-        <Route path="/saved-jobs" element={<SavedJobsPage />} />
-        <Route path="/job-details/:jobId" element={<JobDetailsPage />} />
-        <Route path="*" element={<PageNotFound />} />
-      </Route>
-    </Routes>
+      </Routes>
+    </div>
   );
 }
 

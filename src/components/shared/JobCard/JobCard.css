@@ -16,10 +16,23 @@
     border-color: var(--accent-2);
 }
 
-.job-card:has([aria-busy='true']):hover {
-    /*For card skeletons */
-    border-color: var(--border);
+/*For card skeletons */
+.job-card:has([aria-busy='true']) {
+    cursor: default;
+    user-select: none;
 }
+
+.job-card:has([aria-busy='true']):hover {
+    border-color: var(--border);
+    pointer-events: none;
+    translate: 0 0;
+    box-shadow: none;
+}
+
+.dark .react-loading-skeleton {
+    --base-color: var(--text-3);
+}
+
 
 .job-card-left {
     display: flex;
