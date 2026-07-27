@@ -1,7 +1,7 @@
 import { Bookmark, Menu, Moon, Search, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 import "./Navbar.css";
-import { Logo } from "../../ui/logo/Logo";
+import { Logo } from "../../ui/Logo/Logo";
 import { Sidebar } from "./Sidebar/Sidebar";
 
 function Navbar() {

@@ -12,7 +12,7 @@ import {
 } from "react-icons/si";
 import { SectionInfo } from "../components/SectionInfo/SectionInfo";
 import { FaAws, FaJava } from "react-icons/fa";
-import { DataBadge } from "../../../components/ui/data-badge/DataBadge";
+import { DataBadge } from "../../../components/ui/DataBadge/DataBadge";
 import "./PopularTechnologiesSection.css";
 
 export function PopularTechnologiesSection() {

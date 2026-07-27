@@ -1,4 +1,4 @@
-import { DataBadge } from "../../ui/data-badge/DataBadge";
+import { DataBadge } from "../../ui/DataBadge/DataBadge";
 import "./HeroSection.css";
 
 export function HeroSection() {

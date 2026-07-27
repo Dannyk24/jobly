@@ -1,5 +1,5 @@
 import { Bookmark, Home, Search, X } from "lucide-react";
-import { Logo } from "../../../ui/logo/Logo";
+import { Logo } from "../../../ui/Logo/Logo";
 import { NavLink } from "react-router";
 
 type SidebarProps = {
