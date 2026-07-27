@@ -4,11 +4,19 @@ import "./BackButton.css";
 
 export function BackButton() {
   const navigate = useNavigate();
+  function handleBack() {
+    if (window.history.length > 1) {
+      navigate(-1);
+    } else {
+      navigate("/");
+    }
+  }
+
   return (
     <div
       className="back-button"
       onClick={() => {
-        navigate(-1);
+        handleBack();
       }}
     >
       <ArrowLeft />
