@@ -4,6 +4,7 @@ import * as jobFilters from "../../constants/filters";
 import "./SearchPage.css";
 import { JobCardGrid } from "../../components/shared/JobCardGrid/JobCardGrid";
 import { Select } from "../../components/ui/Select/Select";
+import { BackButton } from "../../components/ui/BackButton/BackButton";
 
 function SearchPage() {
   const jobFiltersArray = Object.values(jobFilters);
@@ -15,6 +16,7 @@ function SearchPage() {
       {!query && <HeroSection />}
       {query && (
         <div className="search-results-shell">
+          <BackButton />
           <p className="search-results-header">
             Search: <span>{query}</span>
           </p>
