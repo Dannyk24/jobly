@@ -64,10 +64,6 @@
     font-size: 0.9rem;
 }
 
-.popular-searches-container {
-    max-width: 500px;
-}
-
 .popular-searches-container .data-badge {
     cursor: pointer;
 }

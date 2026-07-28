@@ -8,12 +8,3 @@
 .homepage-section {
     padding: 30px;
 }
-
-.data-badge-grid {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}

@@ -1,6 +1,6 @@
 import { useSearchParams } from "react-router";
 import { HeroSection } from "../../components/shared/HeroSection/HeroSection";
-import * as jobFilters from "../../constants/filters";
+import * as jobFilters from "../../constants/search/filters";
 import "./SearchPage.css";
 import { JobCardGrid } from "../../components/shared/JobCardGrid/JobCardGrid";
 import { Select } from "../../components/ui/Select/Select";

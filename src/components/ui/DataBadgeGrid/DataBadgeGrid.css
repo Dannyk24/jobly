@@ -1,0 +1,25 @@
+.data-badge-grid {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+
+.data-badge-grid-md {
+    max-width: 900px;
+    justify-self: center;
+    gap: 30px;
+}
+
+.data-badge-grid-md .data-badge {
+    font-size: 1rem;
+}
+
+@media(max-width:550px) {
+    .data-badge-grid-md .data-badge {
+        font-size: 0.9rem;
+    }
+}
