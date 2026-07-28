@@ -6,14 +6,20 @@ type ButtonProps = {
   Icon?: ComponentType;
   variant?: "primary" | "secondary" | "alternate";
   isRounded?: boolean;
+  width?: string;
 };
 
-export function Button({ text, Icon, variant, isRounded }: ButtonProps) {
+export function Button({ text, Icon, variant, isRounded, width }: ButtonProps) {
   const buttonVariant = variant ?? "primary";
   const rounded = isRounded ? "rounded-cta" : "";
 
   return (
-    <div className={`cta ${buttonVariant}-cta ${rounded}`}>
+    <div
+      className={`cta ${buttonVariant}-cta ${rounded}`}
+      style={{
+        width: width,
+      }}
+    >
       {Icon && <Icon />}
       <span>{text}</span>
     </div>
