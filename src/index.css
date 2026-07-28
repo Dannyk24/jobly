@@ -94,52 +94,6 @@ p {
   margin: 0;
 }
 
-.cta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-  font-size: 1rem;
-  font-size: 600;
-  background: none;
-  border: none;
-  border-radius: 3000px;
-  padding: 10px 20px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  transition: var(--general-transition);
-  cursor: pointer;
-  text-transform: capitalize;
-}
-
-.primary-cta {
-  color: white;
-  background-color: var(--accent);
-}
-
-.primary-cta:hover {
-  background-color: var(--accent-2);
-}
-
-.secondary-cta {
-  color: var(--text);
-  border: 1px solid var(--border);
-}
-
-.secondary-cta:hover {
-  background-color: var(--surface-2);
-}
-
-.alternate-cta {
-  background-color: var(--text);
-  color: var(--surface);
-}
-
-.alternate-cta:hover {
-  translate: 0 -2px;
-}
-
 .app-page {
   padding: 100px 20px;
   width: 100%;

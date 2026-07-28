@@ -1,3 +1,4 @@
+import { Button } from "../../ui/Button/Button";
 import { DataBadgeGrid } from "../../ui/DataBadgeGrid/DataBadgeGrid";
 import "./HeroSection.css";
 
@@ -26,9 +27,7 @@ export function HeroSection() {
       </p>
       <div className="main-search-input-container">
         <input type="search" placeholder="Job title, keyword, or company" />
-        <button className="cta alternate-cta search-jobs-cta">
-          search jobs
-        </button>
+        <Button variant="alternate" text="search jobs" isRounded />
       </div>
       <DataBadgeGrid data={popularSearches} />
     </section>
