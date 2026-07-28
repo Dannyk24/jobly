@@ -15,7 +15,10 @@
     transition: var(--general-transition);
     cursor: pointer;
     text-transform: capitalize;
+    width: fit-content;
 }
+
+
 
 .primary-cta {
     color: white;

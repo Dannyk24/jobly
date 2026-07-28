@@ -27,7 +27,7 @@ export function HeroSection() {
       </p>
       <div className="main-search-input-container">
         <input type="search" placeholder="Job title, keyword, or company" />
-        <Button variant="alternate" text="search jobs" isRounded />
+        <Button variant="alternate" text="search jobs" isRounded width="100%" />
       </div>
       <DataBadgeGrid data={popularSearches} />
     </section>

@@ -2,7 +2,7 @@ import type { ComponentType } from "react";
 import "./Button.css";
 
 type ButtonProps = {
-  text: string;
+  text?: string;
   Icon?: ComponentType;
   variant?: "primary" | "secondary" | "alternate";
   isRounded?: boolean;
@@ -21,7 +21,7 @@ export function Button({ text, Icon, variant, isRounded, width }: ButtonProps) {
       }}
     >
       {Icon && <Icon />}
-      <span>{text}</span>
+      {text && <span>{text}</span>}
     </div>
   );
 }
