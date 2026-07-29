@@ -60,6 +60,7 @@
     color: var(--accent);
 }
 
+
 .dropdown-item span {
     width: 100%;
 }
@@ -72,4 +73,5 @@
 
 .dropdown-item:focus {
     outline: none;
+    background-color: var(--surface-2);
 }
