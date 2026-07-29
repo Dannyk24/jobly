@@ -8,6 +8,7 @@ import { JobSkillsSection } from "./JobSkills/JobSkillsSection";
 import { JobMethodologiesSection } from "./JobMethodologies/JobMethodologiesSection";
 import { JobSoftSkillsSection } from "./JobSoftSkills/JobSoftSkillsSection";
 import { JobDetailsHeader } from "./JobDetailsHeader/JobDetailsHeader";
+import { JobPublishersSection } from "./JobPublishers/JobPublishersSection";
 
 function JobDetailsPage() {
   return (
@@ -15,6 +16,7 @@ function JobDetailsPage() {
       <BackButton />
       <JobDetailsHeader />
       <main>
+        <JobPublishersSection />
         <JobDescriptionSection />
         <JobQualificationsSection />
         <JobResponsibilitiesSection />
