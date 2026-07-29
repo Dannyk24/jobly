@@ -1,0 +1,35 @@
+.meta-data-row {
+    display: flex;
+    gap: 1px;
+    align-items: center;
+}
+
+.meta-data-row span {
+    font-size: 0.75rem;
+    color: var(--text-2);
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: var(--general-transition);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        color: var(--accent);
+    }
+}
+
+.decorative-dot {
+    stroke: var(--text-3);
+}
+
+.employer-name {
+    max-width: 70px;
+}
+
+.employer-location {
+    max-width: 110px;
+}

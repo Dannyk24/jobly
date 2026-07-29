@@ -1,6 +1,6 @@
-import { Dot } from "lucide-react";
 import "./JobCard.css";
 import Skeleton from "react-loading-skeleton";
+import { MetaDataRow } from "../../ui/MetaDataRow/MetaDataRow";
 
 export function JobCard() {
   const isLoading = false;
@@ -25,11 +25,7 @@ export function JobCard() {
           {isLoading ? (
             <Skeleton width={150} height={10} />
           ) : (
-            <div className="employer-data">
-              <span className="employer-name">Figma</span>
-              <Dot className="decorative-dot" />
-              <span className="employer-location">san francisco ,CA</span>
-            </div>
+            <MetaDataRow items={["Figma", "Posted 2 days ago"]} />
           )}
 
           {isLoading ? (

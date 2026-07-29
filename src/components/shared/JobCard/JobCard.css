@@ -88,40 +88,6 @@
     }
 }
 
-.employer-data {
-    display: flex;
-    gap: 1px;
-    align-items: center;
-}
-
-.employer-name,
-.employer-location {
-    font-size: 0.75rem;
-    color: var(--text-2);
-    font-weight: 400;
-    text-transform: capitalize;
-    transition: var(--general-transition);
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-
-    &:hover {
-        color: var(--accent);
-    }
-}
-
-.employer-name {
-    max-width: 70px;
-}
-
-.employer-location {
-    max-width: 110px;
-}
-
-.decorative-dot {
-    stroke: var(--text-3);
-}
-
 .job-tags {
     display: flex;
     gap: 10px;
