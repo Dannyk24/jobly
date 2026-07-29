@@ -88,6 +88,10 @@
     }
 }
 
+.job-card .meta-data-row span {
+    max-width: 120px;
+}
+
 .job-tags {
     display: flex;
     gap: 10px;

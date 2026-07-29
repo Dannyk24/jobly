@@ -1,5 +1,6 @@
 import { Dot } from "lucide-react";
 import "./MetaDataRow.css";
+import { Fragment } from "react/jsx-runtime";
 
 type MetaDataRowProps = {
   items: string[];
@@ -10,10 +11,10 @@ export function MetaDataRow({ items }: MetaDataRowProps) {
     <div className="meta-data-row">
       {items.map((item, index) => {
         return (
-          <span key={index}>
+          <Fragment key={index}>
             {index > 0 && <Dot className="decorative-dot" />}
-            {item}
-          </span>
+            <span>{item}</span>
+          </Fragment>
         );
       })}
     </div>
