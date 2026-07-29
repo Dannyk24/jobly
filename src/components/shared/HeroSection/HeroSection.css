@@ -24,6 +24,10 @@
     font-weight: 300;
 }
 
+#hero-section .data-badge-grid {
+    margin-top: 20px;
+}
+
 .main-search-input-container {
     display: flex;
     flex-direction: column;

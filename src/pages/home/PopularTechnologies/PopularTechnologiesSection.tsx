@@ -5,7 +5,7 @@ import { popularTechnologies } from "../../../constants/home/popularTechnologies
 
 export function PopularTechnologiesSection() {
   return (
-    <div id="popularTechnologiesSection" className="homepage-section">
+    <div id="popular-technologies-section" className="homepage-section">
       <SectionInfo
         tagline="stack"
         header="Browse by technology"

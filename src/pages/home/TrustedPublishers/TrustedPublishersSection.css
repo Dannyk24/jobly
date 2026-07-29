@@ -1,3 +1,7 @@
+#trusted-publishers-section .data-badge-grid {
+    margin-top: 20px;
+}
+
 .trusted-publishers-container {
     max-width: 900px;
     justify-self: center;
