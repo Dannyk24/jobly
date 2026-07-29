@@ -1,0 +1,19 @@
+.page-sub-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sub-section-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-2);
+}
+
+.page-sub-section .data-badge-grid {
+    margin-top: 5px;
+}
+
+.sub-section-title::first-letter {
+    text-transform: uppercase;
+}

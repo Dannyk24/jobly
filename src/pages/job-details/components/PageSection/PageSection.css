@@ -1,0 +1,16 @@
+.job-details-page-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.job-details-page-section .section-header {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.section-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

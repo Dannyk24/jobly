@@ -1,0 +1,27 @@
+.section-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-list-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.section-list-item svg {
+    width: 21px;
+    scale: 1.5;
+    fill: var(--accent);
+    stroke: var(--accent);
+}
+
+.section-list-item span {
+    font-size: 0.9rem;
+    color: var(--text-2);
+}
+
+.section-list-item span::first-letter {
+    text-transform: uppercase;
+}

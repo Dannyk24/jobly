@@ -1,0 +1,53 @@
+.current-job-route-indciator {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-2);
+    font-size: 0.85rem;
+}
+
+.current-job-route-indciator .job-industry {
+    color: var(--text-2);
+}
+
+.current-job-route-indciator .job-title {
+    color: var(--text);
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.job-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.job-details-container .job-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.job-info-container .right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.job-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.job-actions-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.job-actions-container svg {
+    width: 16px;
+}

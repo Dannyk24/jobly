@@ -66,7 +66,7 @@
     height: 50px;
 }
 
-.job-info-container {
+.job-card .job-info-container {
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -88,14 +88,14 @@
     }
 }
 
-.job-card .employer-data {
+.employer-data {
     display: flex;
     gap: 1px;
     align-items: center;
 }
 
-.job-card .employer-name,
-.job-card .employer-location {
+.employer-name,
+.employer-location {
     font-size: 0.75rem;
     color: var(--text-2);
     font-weight: 400;
@@ -110,11 +110,11 @@
     }
 }
 
-.job-card .employer-name {
+.employer-name {
     max-width: 70px;
 }
 
-.job-card .employer-location {
+.employer-location {
     max-width: 110px;
 }
 
@@ -122,18 +122,18 @@
     stroke: var(--text-3);
 }
 
-.job-card .job-tags {
+.job-tags {
     display: flex;
     gap: 10px;
     align-items: center;
     margin-top: 2px;
 }
 
-.job-tags .data-badge {
+.data-badge {
     font-size: 0.7rem;
 }
 
-.job-card .job-card-right {
+.job-card-right {
     display: flex;
     flex-direction: column;
     gap: 6px;

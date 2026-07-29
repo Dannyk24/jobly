@@ -1,0 +1,13 @@
+.job-details-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.job-details-page main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
