@@ -53,3 +53,7 @@
 .job-actions-container svg {
     width: 16px;
 }
+
+.job-details-header .data-badge-grid {
+    justify-content: start;
+}

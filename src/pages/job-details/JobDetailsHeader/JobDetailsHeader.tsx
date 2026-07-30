@@ -1,6 +1,8 @@
-import { Bookmark, Dot } from "lucide-react";
+import { Bookmark } from "lucide-react";
 import { Button } from "../../../components/ui/Button/Button";
 import "./JobDetailsHeader.css";
+import { MetaDataRow } from "../../../components/ui/MetaDataRow/MetaDataRow";
+import { DataBadgeGrid } from "../../../components/ui/DataBadgeGrid/DataBadgeGrid";
 
 export function JobDetailsHeader() {
   return (
@@ -19,26 +21,20 @@ export function JobDetailsHeader() {
           </div>
           <div className="right">
             <span className="job-title">Senior Javascript Developer</span>
-            <div className="employer-data-container">
-              <div className="employer-data">
-                <span className="employer-name">Figma</span>
-                <Dot className="decorative-dot" />
-                <span className="employer-location">san francisco ,CA</span>
-              </div>
-            </div>
-            <div className="employer-data-container">
-              <div className="employer-data">
-                <span className="employer-name">Remote</span>
-                <Dot className="decorative-dot" />
-                <span className="employer-location">Posted 2 days ago</span>
-              </div>
-            </div>
+            <MetaDataRow items={["Figma", "San francisco, CA"]} />
+            <MetaDataRow items={["Remote", "Posted 2 days ago"]} />
           </div>
+          <DataBadgeGrid data={["$120k-$160k", "Senior"]} />
         </div>
         <div className="job-actions-container">
           <Button variant="primary" text="apply now" isRounded />
           <Button variant="secondary" text="Visit company website" isRounded />
-          <Button Icon={Bookmark} variant="secondary" isRounded />
+          <Button
+            Icon={Bookmark}
+            variant="secondary"
+            isRounded
+            text="Bookmark"
+          />
         </div>
       </div>
     </div>
