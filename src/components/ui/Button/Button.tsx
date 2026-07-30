@@ -7,7 +7,7 @@ type ButtonProps = {
   variant?: "primary" | "secondary" | "alternate";
   isRounded?: boolean;
   width?: string;
-  onClick: () => void;
+  onClick?: () => void;
 };
 
 export function Button({

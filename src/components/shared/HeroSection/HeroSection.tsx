@@ -33,9 +33,7 @@ export function HeroSection() {
           text="search jobs"
           isRounded
           width="100%"
-          onClick={() => {
-            search(inputText);
-          }}
+          onClick={search}
         />
       </div>
       <DataBadgeGrid data={popularSearches} />

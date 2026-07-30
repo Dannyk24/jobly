@@ -47,9 +47,7 @@ function Navbar() {
           />
           <button
             className="cta primary-cta header-search-cta"
-            onClick={() => {
-              search(inputText);
-            }}
+            onClick={search}
           >
             Search
           </button>

@@ -1,22 +1,23 @@
 import { useNavigate } from "react-router";
 import { useState } from "react";
 import type { KeyboardEvent } from "react";
+import { buildSearchUrl } from "../utils/search";
 
 export function useJobSearch() {
   const navigate = useNavigate();
   const [inputText, setInputText] = useState("");
 
-  function search(query: string) {
-    const searchQuery = query.trim().toLowerCase();
-    if (searchQuery === "") {
+  function search() {
+    const query = inputText.trim().toLowerCase();
+    if (query === "") {
       return;
     }
-    navigate(`/search?query=${encodeURIComponent(searchQuery)}`);
+    navigate(buildSearchUrl(inputText));
   }
 
   function handleKeyDown(e: KeyboardEvent<HTMLInputElement>) {
     if (e.key === "Enter") {
-      search(inputText);
+      search();
     }
   }
 
