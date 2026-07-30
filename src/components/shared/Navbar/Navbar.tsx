@@ -3,8 +3,11 @@ import { useEffect, useState } from "react";
 import "./Navbar.css";
 import { Logo } from "../../ui/Logo/Logo";
 import { Sidebar } from "./Sidebar/Sidebar";
+import { useJobSearch } from "../../../hooks/useJobSearch";
 
 function Navbar() {
+  const { inputText, setInputText, search, handleKeyDown } = useJobSearch();
+
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem("jobly-theme") ?? "dark"; //Default to dark if user has no saved theme
@@ -34,8 +37,22 @@ function Navbar() {
           <input
             type="search"
             placeholder="Search jobs from around the globe......"
+            value={inputText}
+            onChange={(e) => {
+              setInputText(e.target.value);
+            }}
+            onKeyDown={(e) => {
+              handleKeyDown(e);
+            }}
           />
-          <button className="cta primary-cta header-search-cta">Search</button>
+          <button
+            className="cta primary-cta header-search-cta"
+            onClick={() => {
+              search();
+            }}
+          >
+            Search
+          </button>
         </div>
         <div className="header-icons">
           <div

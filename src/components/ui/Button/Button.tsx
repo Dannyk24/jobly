@@ -7,9 +7,17 @@ type ButtonProps = {
   variant?: "primary" | "secondary" | "alternate";
   isRounded?: boolean;
   width?: string;
+  onClick: () => void;
 };
 
-export function Button({ text, Icon, variant, isRounded, width }: ButtonProps) {
+export function Button({
+  text,
+  Icon,
+  variant,
+  isRounded,
+  width,
+  onClick,
+}: ButtonProps) {
   const buttonVariant = variant ?? "primary";
   const rounded = isRounded ? "rounded-cta" : "";
 
@@ -19,6 +27,7 @@ export function Button({ text, Icon, variant, isRounded, width }: ButtonProps) {
       style={{
         width: width,
       }}
+      onClick={onClick}
     >
       {Icon && <Icon />}
       {text && <span>{text}</span>}
