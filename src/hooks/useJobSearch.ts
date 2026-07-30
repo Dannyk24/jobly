@@ -6,17 +6,17 @@ export function useJobSearch() {
   const navigate = useNavigate();
   const [inputText, setInputText] = useState("");
 
-  function search() {
-    const query = inputText.trim().toLowerCase();
-    if (query === "") {
+  function search(query: string) {
+    const searchQuery = query.trim().toLowerCase();
+    if (searchQuery === "") {
       return;
     }
-    navigate(`/search?query=${encodeURIComponent(query)}`);
+    navigate(`/search?query=${encodeURIComponent(searchQuery)}`);
   }
 
   function handleKeyDown(e: KeyboardEvent<HTMLInputElement>) {
     if (e.key === "Enter") {
-      search();
+      search(inputText);
     }
   }
 
