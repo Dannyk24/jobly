@@ -1,3 +1,3 @@
 export function buildSearchUrl(query: string) {
-  return `/search/${encodeURIComponent(query)}`;
+  return `/search?query=${encodeURIComponent(query)}`;
 }
